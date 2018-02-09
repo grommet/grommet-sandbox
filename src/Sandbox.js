@@ -6,6 +6,7 @@ import Home from './Home';
 import Anchor from './Anchor';
 import Box from './Box';
 import Button from './Button';
+import Calendar from './Calendar';
 import Grid from './Grid';
 
 const history = createBrowserHistory();
@@ -21,6 +22,7 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/grid' component={Grid} />
             <Route exact={true} path='/anchor' component={Anchor} />
             <Route exact={true} path='/button' component={Button} />
+            <Route exact={true} path='/calendar' component={Calendar} />
           </Switch>
         </Grommet>
       </Router>

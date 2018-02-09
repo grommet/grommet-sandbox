@@ -8,5 +8,6 @@ export default () => (
     <RoutedAnchor path='/grid' label='Grid' />
     <RoutedAnchor path='/anchor' label='Anchor' />
     <RoutedAnchor path='/button' label='Button' />
+    <RoutedAnchor path='/calendar' label='Calendar' />
   </Box>
 );
