@@ -7,16 +7,27 @@ import Anchor from './Anchor';
 import Box from './Box';
 import Button from './Button';
 import Calendar from './Calendar';
+import Chart from './Chart';
 import CheckBox from './CheckBox';
+import Clock from './Clock';
+import Diagram from './Diagram';
 import Grid from './Grid';
 import Heading from './Heading';
+import Image from './Image';
 import Layer from './Layer';
 import Markdown from './Markdown';
 import Menu from './Menu';
+import Meter from './Meter';
 import Paragraph from './Paragraph';
 import RadioButton from './RadioButton';
+import RangeInput from './RangeInput';
+import Select from './Select';
 import Stack from './Stack';
 import Text from './Text';
+import TextArea from './TextArea';
+import TextInput from './TextInput';
+import Video from './Video';
+import WorldMap from './WorldMap';
 
 const history = createBrowserHistory();
 
@@ -41,9 +52,22 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/button' component={Button} />
             <Route exact={true} path='/menu' component={Menu} />
 
-            <Route exact={true} path='/calendar' component={Calendar} />
             <Route exact={true} path='/checkbox' component={CheckBox} />
+            <Route exact={true} path='/rangeinput' component={RangeInput} />
             <Route exact={true} path='/radiobutton' component={RadioButton} />
+            <Route exact={true} path='/select' component={Select} />
+            <Route exact={true} path='/textarea' component={TextArea} />
+            <Route exact={true} path='/textinput' component={TextInput} />
+
+            <Route exact={true} path='/calendar' component={Calendar} />
+            <Route exact={true} path='/chart' component={Chart} />
+            <Route exact={true} path='/clock' component={Clock} />
+            <Route exact={true} path='/diagram' component={Diagram} />
+            <Route exact={true} path='/meter' component={Meter} />
+            <Route exact={true} path='/worldmap' component={WorldMap} />
+
+            <Route exact={true} path='/image' component={Image} />
+            <Route exact={true} path='/video' component={Video} />
           </Switch>
         </Grommet>
       </Router>

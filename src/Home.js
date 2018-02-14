@@ -20,7 +20,20 @@ export default () => (
     <RoutedAnchor path='/menu' label='Menu' />
     <Heading level={2}>Input</Heading>
     <RoutedAnchor path='/checkbox' label='CheckBox' />
-    <RoutedAnchor path='/calendar' label='Calendar' />
     <RoutedAnchor path='/radiobutton' label='RadioButton' />
+    <RoutedAnchor path='/rangeinput' label='RangeInput' />
+    <RoutedAnchor path='/select' label='Select' />
+    <RoutedAnchor path='/textarea' label='TextArea' />
+    <RoutedAnchor path='/textinput' label='TextInput' />
+    <Heading level={2}>Visualizations</Heading>
+    <RoutedAnchor path='/calendar' label='Calendar' />
+    <RoutedAnchor path='/chart' label='Chart' />
+    <RoutedAnchor path='/clock' label='Clock' />
+    <RoutedAnchor path='/diagram' label='Diagram' />
+    <RoutedAnchor path='/meter' label='Meter' />
+    <RoutedAnchor path='/worldmap' label='WorldMap' />
+    <Heading level={2}>Media</Heading>
+    <RoutedAnchor path='/image' label='Image' />
+    <RoutedAnchor path='/video' label='Video' />
   </Box>
 );

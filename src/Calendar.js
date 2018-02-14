@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Box, Calendar } from 'grommet';
 
-export default class CalendarSandbox extends Component {
+export default class extends Component {
   state = {}
 
   onSelectSingle = date => this.setState({ date })
