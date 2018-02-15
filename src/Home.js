@@ -31,6 +31,8 @@ export default () => (
     <RoutedAnchor path='/clock' label='Clock' />
     <RoutedAnchor path='/diagram' label='Diagram' />
     <RoutedAnchor path='/meter' label='Meter' />
+    <RoutedAnchor path='/table' label='Table' />
+    <RoutedAnchor path='/table-fancy' label='Fancy Table' />
     <RoutedAnchor path='/worldmap' label='WorldMap' />
     <Heading level={2}>Media</Heading>
     <RoutedAnchor path='/image' label='Image' />

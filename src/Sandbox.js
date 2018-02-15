@@ -23,6 +23,8 @@ import RadioButton from './RadioButton';
 import RangeInput from './RangeInput';
 import Select from './Select';
 import Stack from './Stack';
+import Table from './Table';
+import TableFancy from './TableFancy';
 import Text from './Text';
 import TextArea from './TextArea';
 import TextInput from './TextInput';
@@ -68,6 +70,9 @@ export default class Sandbox extends Component {
 
             <Route exact={true} path='/image' component={Image} />
             <Route exact={true} path='/video' component={Video} />
+
+            <Route exact={true} path='/table' component={Table} />
+            <Route exact={true} path='/table-fancy' component={TableFancy} />
           </Switch>
         </Grommet>
       </Router>
