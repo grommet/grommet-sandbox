@@ -57,6 +57,7 @@ export default () => (
     <Box>
       <Heading level={2}>Examples</Heading>
       <RoutedAnchor path='/formfield' label='Form Field' />
+      <RoutedAnchor path='/dateinput' label='Date Input' />
     </Box>
 
     <Box>

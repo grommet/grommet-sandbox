@@ -10,6 +10,7 @@ import Calendar from './Calendar';
 import Chart from './Chart';
 import CheckBox from './CheckBox';
 import Clock from './Clock';
+import DateInput from './DateInput';
 import Diagram from './Diagram';
 import Distribution from './Distribution';
 import FormField from './FormField';
@@ -74,7 +75,9 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/image' component={Image} />
             <Route exact={true} path='/video' component={Video} />
 
+            <Route exact={true} path='/dateinput' component={DateInput} />
             <Route exact={true} path='/formfield' component={FormField} />
+
             <Route exact={true} path='/table' component={Table} />
             <Route exact={true} path='/table-fancy' component={TableFancy} />
 
