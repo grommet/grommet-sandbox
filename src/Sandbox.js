@@ -12,6 +12,7 @@ import CheckBox from './CheckBox';
 import Clock from './Clock';
 import Diagram from './Diagram';
 import Distribution from './Distribution';
+import FormField from './FormField';
 import Grid from './Grid';
 import Heading from './Heading';
 import Image from './Image';
@@ -68,12 +69,14 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/diagram' component={Diagram} />
             <Route exact={true} path='/distribution' component={Distribution} />
             <Route exact={true} path='/meter' component={Meter} />
-            <Route exact={true} path='/table' component={Table} />
-            <Route exact={true} path='/table-fancy' component={TableFancy} />
             <Route exact={true} path='/worldmap' component={WorldMap} />
 
             <Route exact={true} path='/image' component={Image} />
             <Route exact={true} path='/video' component={Video} />
+
+            <Route exact={true} path='/formfield' component={FormField} />
+            <Route exact={true} path='/table' component={Table} />
+            <Route exact={true} path='/table-fancy' component={TableFancy} />
 
           </Switch>
         </Grommet>
