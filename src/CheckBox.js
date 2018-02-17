@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import { Box, CheckBox } from 'grommet';
+import { CheckBox } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = {}
@@ -8,13 +8,13 @@ export default class extends Component {
   render() {
     const { checked } = this.state;
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <CheckBox
           checked={checked}
           label='Acknowledge'
           onClick={event => this.setState({ checked: event.target.checked })}
         />
-      </Box>
+      </SandboxComponent>
     );
   }
 }

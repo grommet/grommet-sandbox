@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
-import { Box, Chart } from 'grommet';
+import { Chart } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   render() {
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <Chart
           type='bar'
           values={[
@@ -16,7 +16,7 @@ export default class extends Component {
             { label: 'Fifth', value: [4, 10] },
           ]}
         />
-      </Box>
+      </SandboxComponent>
     );
   }
 }

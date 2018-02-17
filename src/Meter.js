@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import { Box, Meter } from 'grommet';
+import { Meter } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = {}
@@ -8,7 +8,7 @@ export default class extends Component {
   render() {
     const { active } = this.state;
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <Meter
           type='bar'
           values={[
@@ -26,7 +26,7 @@ export default class extends Component {
             },
           ]}
         />
-      </Box>
+      </SandboxComponent>
     );
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react';
-
 import { Box, Grid } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large'>
+  <SandboxComponent align='stretch'>
     <Grid
       areas={[
         { name: 'nav', start: [0, 0], end: [0, 0] },
@@ -20,5 +20,5 @@ export default () => (
       <Box gridArea='side' background='brand' />
       <Box gridArea='foot' background='accent-1' />
     </Grid>
-  </Box>
+  </SandboxComponent>
 );

@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Image } from 'grommet';
+import { Image } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large'>
+  <SandboxComponent align='stretch'>
     <Image fit='cover' src='//v2.grommet.io/assets/Wilderpeople_Ricky.jpg' />
-  </Box>
+  </SandboxComponent>
 );

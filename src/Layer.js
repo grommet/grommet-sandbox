@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-
 import { Box, Button, Layer } from 'grommet';
 import { Close } from 'grommet-icons';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = {}
@@ -9,7 +9,7 @@ export default class extends Component {
   render() {
     const { show } = this.state;
     return (
-      <Box pad='xlarge' justify='center' align='center'>
+      <SandboxComponent justify='center' align='center'>
         <Button label='Show Layer' onClick={() => this.setState({ show: !show })} />
         {show ? (
           <Layer position='top' onClickOverlay={() => this.setState({ show: false })}>
@@ -18,7 +18,7 @@ export default class extends Component {
             </Box>
           </Layer>
         ) : null}
-      </Box>
+      </SandboxComponent>
     );
   }
 }

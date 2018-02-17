@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Anchor } from 'grommet';
+import { Anchor } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Anchor label='Follow' onClick={() => {}} />
-  </Box>
+  </SandboxComponent>
 );

@@ -1,12 +1,12 @@
 import React from 'react';
-
-import { Box, Paragraph } from 'grommet';
+import { Paragraph } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Paragraph>
       {`You know, sometimes in life it seems like there's no way out. Like
       a sheep trapped in a maze designed by wolves.`}
     </Paragraph>
-  </Box>
+  </SandboxComponent>
 );

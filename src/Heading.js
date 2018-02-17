@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Heading } from 'grommet';
+import { Heading } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Heading level={1}>Out of Breath</Heading>
-  </Box>
+  </SandboxComponent>
 );

@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, WorldMap } from 'grommet';
+import { WorldMap } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <WorldMap color='brand' />
-  </Box>
+  </SandboxComponent>
 );

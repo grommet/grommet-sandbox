@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Button } from 'grommet';
+import { Button } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Button active={true} label='Submit' onClick={() => {}} />
-  </Box>
+  </SandboxComponent>
 );

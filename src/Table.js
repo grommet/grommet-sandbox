@@ -1,6 +1,8 @@
 import React from 'react';
-
-import { Box, Table, TableBody, TableCell, TableFooter, TableHeader, TableRow, Text } from 'grommet';
+import {
+  Table, TableBody, TableCell, TableFooter, TableHeader, TableRow, Text,
+} from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 // Always should store amount in cents to avoid precision errors
 const DATA = [
@@ -39,7 +41,7 @@ const COLUMNS = [
 ];
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Table caption='Simple Table'>
       <TableHeader>
         <TableRow>
@@ -73,5 +75,5 @@ export default () => (
         </TableRow>
       </TableFooter>
     </Table>
-  </Box>
+  </SandboxComponent>
 );

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
 import {
   Box, Button, Table, TableBody, TableCell, TableFooter, TableHeader, TableRow,
   Text,
 } from 'grommet';
 import { FormUp, FormDown } from 'grommet-icons';
+import SandboxComponent from './SandboxComponent';
 
 // Always should store amount in cents to avoid precision errors
 const DATA = [
@@ -98,7 +98,7 @@ export default class extends Component {
     const sortIcon = (sortDirection === 'asc' ? <FormDown /> : <FormUp />);
 
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
 
         <Box flex={false}>
           <Table caption='Fancy Table Header'>
@@ -200,7 +200,7 @@ export default class extends Component {
           </Table>
         </Box>
 
-      </Box>
+      </SandboxComponent>
     );
   }
 }

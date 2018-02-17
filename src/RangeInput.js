@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import { Box, RangeInput } from 'grommet';
+import { RangeInput } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = { value: 5 }
@@ -8,7 +8,7 @@ export default class extends Component {
   render() {
     const { value } = this.state;
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <RangeInput
           value={value}
           min={0}
@@ -16,7 +16,7 @@ export default class extends Component {
           step={1}
           onChange={event => this.setState({ value: event.target.value })}
         />
-      </Box>
+      </SandboxComponent>
     );
   }
 }

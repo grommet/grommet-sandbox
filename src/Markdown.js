@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Markdown } from 'grommet';
+import { Markdown } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Markdown
       content={`
         # Out of Breath
@@ -14,5 +14,5 @@ export default () => (
         [reference](#)
       `}
     />
-  </Box>
+  </SandboxComponent>
 );

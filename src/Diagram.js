@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import { Box, Diagram, Stack } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 const Node = ({ id, ...rest }) => (
   <Box
@@ -21,7 +21,7 @@ const connection = (fromId, toId, { color, ...rest } = {}) => ({
 export default class extends Component {
   render() {
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <Stack>
           <Box>
             <Box direction='row'>
@@ -41,7 +41,7 @@ export default class extends Component {
             ]}
           />
         </Stack>
-      </Box>
+      </SandboxComponent>
     );
   }
 }

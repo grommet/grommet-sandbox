@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import { Box, Calendar } from 'grommet';
+import { Calendar } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = {}
@@ -45,13 +45,13 @@ export default class extends Component {
   render() {
     const { date, dates } = this.state;
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <Calendar
           date={date}
           dates={dates}
           onSelect={this.onSelectRange}
         />
-      </Box>
+      </SandboxComponent>
     );
   }
 }

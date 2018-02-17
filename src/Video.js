@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Video } from 'grommet';
+import { Video } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large'>
+  <SandboxComponent align='stretch'>
     <Video fit='cover' controls='over'>
       <source key='video' src='//v2.grommet.io/assets/small.mp4' type='video/mp4' />
       <track
@@ -15,5 +15,5 @@ export default () => (
         default={true}
       />
     </Video>
-  </Box>
+  </SandboxComponent>
 );

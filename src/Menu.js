@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Menu } from 'grommet';
+import { Menu } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Menu
       label='Menu'
       items={[
@@ -11,5 +11,5 @@ export default () => (
         { label: 'Second', href: '#' },
       ]}
     />
-  </Box>
+  </SandboxComponent>
 );

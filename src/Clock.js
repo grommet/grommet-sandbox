@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Clock } from 'grommet';
+import { Clock } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Clock />
-  </Box>
+  </SandboxComponent>
 );

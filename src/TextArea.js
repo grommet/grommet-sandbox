@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import { Box, TextArea } from 'grommet';
+import { TextArea } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = { text: '' }
@@ -8,12 +8,12 @@ export default class extends Component {
   render() {
     const { text } = this.state;
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <TextArea
           value={text}
           onChange={event => this.setState({ text: event.target.value })}
         />
-      </Box>
+      </SandboxComponent>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import { Box, Select } from 'grommet';
+import { Select } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = { value: '' }
@@ -8,13 +8,13 @@ export default class extends Component {
   render() {
     const { value } = this.state;
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <Select
           value={value}
           onChange={event => this.setState({ value: event.option })}
           options={['First', 'Second', 'Third']}
         />
-      </Box>
+      </SandboxComponent>
     );
   }
 }

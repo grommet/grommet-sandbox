@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Box, Text } from 'grommet';
+import { Text } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <Box pad='large' align='center'>
+  <SandboxComponent>
     <Text>Ricky town, population... Ricky</Text>
-  </Box>
+  </SandboxComponent>
 );

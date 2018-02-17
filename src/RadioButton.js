@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import { Box, RadioButton } from 'grommet';
+import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
   state = {}
@@ -8,7 +8,7 @@ export default class extends Component {
   render() {
     const { selected } = this.state;
     return (
-      <Box pad='large' align='center'>
+      <SandboxComponent>
         <Box align='start'>
           {['First', 'Second'].map(label => (
             <Box key={label} margin={{ vertical: 'small' }}>
@@ -21,7 +21,7 @@ export default class extends Component {
             </Box>
           ))}
         </Box>
-      </Box>
+      </SandboxComponent>
     );
   }
 }
