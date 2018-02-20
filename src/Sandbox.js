@@ -34,10 +34,14 @@ import TextInput from './TextInput';
 import Video from './Video';
 import WorldMap from './WorldMap';
 
-const history = createBrowserHistory();
-
 export default class Sandbox extends Component {
+  constructor(props) {
+    super(props);
+    const history = createBrowserHistory({ basename: props.routePrefix });
+    this.state = { history };
+  }
   render() {
+    const { history } = this.state;
     return (
       <Router history={history}>
         <Grommet>
