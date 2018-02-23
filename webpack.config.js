@@ -65,13 +65,14 @@ if (env === 'production') {
     },
     historyApiFallback: true,
   };
-  if (useAlias) {
-    console.log('Using alias to local grommet.');
-    alias = {
-      'grommet': path.resolve(__dirname, '../grommet/src/js'),
-      'grommet-icons': path.resolve(__dirname, '../grommet-icons/src/js'),
-    };
-  }
+}
+
+if (useAlias) {
+  console.log('Using alias to local grommet.');
+  alias = {
+    'grommet': path.resolve(__dirname, '../grommet/src/js'),
+    'grommet-icons': path.resolve(__dirname, '../grommet-icons/src/js'),
+  };
 }
 
 plugins.push(new webpack.LoaderOptionsPlugin(loaderOptionsConfig));
