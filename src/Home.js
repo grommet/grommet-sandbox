@@ -24,7 +24,10 @@ export default () => (
       <Heading level={2}>Controls</Heading>
       <RoutedAnchor path='/anchor' label='Anchor' />
       <RoutedAnchor path='/button' label='Button' />
+      <RoutedAnchor path='/dropbutton' label='DropButton' />
       <RoutedAnchor path='/menu' label='Menu' />
+      <RoutedAnchor path='/dropbutton-airlines' label='DropButton Airlines' />
+      <RoutedAnchor path='/dropbutton-labels' label='DropButton Labels' />
     </Box>
 
     <Box>
@@ -35,6 +38,7 @@ export default () => (
       <RoutedAnchor path='/select' label='Select' />
       <RoutedAnchor path='/textarea' label='TextArea' />
       <RoutedAnchor path='/textinput' label='TextInput' />
+      <RoutedAnchor path='/select-creditcard' label='Select CreditCard' />
     </Box>
 
     <Box>
