@@ -4,8 +4,7 @@ import SandboxComponent from './SandboxComponent';
 
 export default () => (
   <SandboxComponent>
-    <Markdown
-      content={`
+    <Markdown>{`
         # Out of Breath
 
         You know, sometimes in life it seems like there's no way out. Like
@@ -13,6 +12,6 @@ export default () => (
 
         [reference](#)
       `}
-    />
+    </Markdown>
   </SandboxComponent>
 );
