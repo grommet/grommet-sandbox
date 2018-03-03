@@ -12,7 +12,7 @@ export default class extends Component {
         <CheckBox
           checked={checked}
           label='Acknowledge'
-          onClick={event => this.setState({ checked: event.target.checked })}
+          onChange={event => this.setState({ checked: event.target.checked })}
         />
       </SandboxComponent>
     );

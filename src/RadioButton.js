@@ -16,7 +16,7 @@ export default class extends Component {
                 name='prop'
                 checked={selected === label}
                 label={label}
-                onClick={() => this.setState({ selected: label })}
+                onChange={() => this.setState({ selected: label })}
               />
             </Box>
           ))}

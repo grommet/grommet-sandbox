@@ -4,6 +4,6 @@ import SandboxComponent from './SandboxComponent';
 
 export default () => (
   <SandboxComponent>
-    <Button active={true} label='Submit' onClick={() => {}} />
+    <Button label='Submit' onClick={() => {}} />
   </SandboxComponent>
 );
