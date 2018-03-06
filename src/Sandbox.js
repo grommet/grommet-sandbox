@@ -7,6 +7,7 @@ import Anchor from './Anchor';
 import Box from './Box';
 import Button from './Button';
 import Calendar from './Calendar';
+import Carousel from './Carousel';
 import Chart from './Chart';
 import CheckBox from './CheckBox';
 import Clock from './Clock';
@@ -84,6 +85,7 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/meter' component={Meter} />
             <Route exact={true} path='/worldmap' component={WorldMap} />
 
+            <Route exact={true} path='/carousel' component={Carousel} />
             <Route exact={true} path='/image' component={Image} />
             <Route exact={true} path='/video' component={Video} />
 

@@ -54,6 +54,7 @@ export default () => (
 
     <Box>
       <Heading level={2}>Media</Heading>
+      <RoutedAnchor path='/carousel' label='Carousel' />
       <RoutedAnchor path='/image' label='Image' />
       <RoutedAnchor path='/video' label='Video' />
     </Box>
