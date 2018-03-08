@@ -61,12 +61,13 @@ export default () => (
 
     <Box>
       <Heading level={2}>Examples</Heading>
-      <RoutedAnchor path='/formfield' label='Form Field' />
+      <RoutedAnchor path='/form' label='Form' />
       <RoutedAnchor path='/dateinput' label='Date Input' />
     </Box>
 
     <Box>
       <Heading level={2}>Old School</Heading>
+      <RoutedAnchor path='/formfield' label='Form Field' />
       <RoutedAnchor path='/table' label='Table' />
       <RoutedAnchor path='/table-fancy' label='Fancy Table' />
     </Box>

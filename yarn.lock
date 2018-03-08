@@ -3066,9 +3066,9 @@ grommet-icons@^0.16.0:
   dependencies:
     deep-assign "^2.0.0"
 
-grommet@^2.0.0-alpha.12:
-  version "2.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.0.0-alpha.12.tgz#7f6b0ca37f546213fede7d9bb832cc5b987f1bc2"
+grommet@^2.0.0-alpha.13:
+  version "2.0.0-alpha.13"
+  resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.0.0-alpha.13.tgz#8a272dfddbd18bcd2522096bdac7bef4a70ac5d0"
   dependencies:
     babel-plugin-grommet "^0.5.1"
     grommet-icons "^0.16.0"

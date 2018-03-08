@@ -17,6 +17,7 @@ import Distribution from './Distribution';
 import DropButton from './DropButton';
 import DropButtonAirlines from './DropButtonAirlines';
 import DropButtonLabels from './DropButtonLabels';
+import Form from './Form';
 import FormField from './FormField';
 import Grid from './Grid';
 import Heading from './Heading';
@@ -91,6 +92,7 @@ export default class Sandbox extends Component {
 
             <Route exact={true} path='/dateinput' component={DateInput} />
             <Route exact={true} path='/formfield' component={FormField} />
+            <Route exact={true} path='/form' component={Form} />
 
             <Route exact={true} path='/table' component={Table} />
             <Route exact={true} path='/table-fancy' component={TableFancy} />
