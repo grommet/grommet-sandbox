@@ -30,6 +30,27 @@ const ConfirmationLayer = ({ onClose }) => (
   </Layer>
 );
 
+const SidebarLayer = ({ onClose }) => (
+  <Layer position='left' full='vertical' modal={false} plain={true}>
+    <Box background='brand' fill='vertical'>
+      <Box pad={{ horizontal: 'medium', vertical: 'small' }}>
+        <Text size='large'>Title</Text>
+      </Box>
+      {['First', 'Second', 'Third'].map(name => (
+        <Button
+          key={name}
+          onClick={onClose}
+          hoverIndicator={{ background: 'light-5' }}
+        >
+          <Box pad={{ horizontal: 'medium', vertical: 'small' }}>
+            <Text size='large'>{name}</Text>
+          </Box>
+        </Button>
+      ))}
+    </Box>
+  </Layer>
+);
+
 export default class extends Component {
   state = {}
 
@@ -40,13 +61,20 @@ export default class extends Component {
       layer = <ToastLayer onClose={() => this.setState({ layerType: undefined })} />;
     } else if (layerType === 'Confirmation') {
       layer = <ConfirmationLayer onClose={() => this.setState({ layerType: undefined })} />;
+    } else if (layerType === 'Sidebar') {
+      layer = <SidebarLayer onClose={() => this.setState({ layerType: undefined })} />;
     }
 
     return (
       <SandboxComponent justify='center' align='center'>
-        {['Toast', 'Confirmation'].map(label => (
+        {['Toast', 'Confirmation', 'Sidebar'].map(label => (
           <Box key={label} margin='small'>
-            <Button label={label} onClick={() => this.setState({ layerType: label })} />
+            <Button
+              label={label}
+              onClick={() => this.setState({
+                layerType: (layerType === label ? undefined : label),
+              })}
+            />
           </Box>
         ))}
         {layer}

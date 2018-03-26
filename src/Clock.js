@@ -29,7 +29,7 @@ class StackedClock extends Component {
     if (time) {
       const match = time.match(/^T(\d+)/);
       if (match) {
-        hour = match[1];
+        [, hour] = match;
         if (hour > 12) {
           hour -= 12;
         } else if (hour === 0) {

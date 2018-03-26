@@ -30,7 +30,7 @@ class DateInput extends Component {
 
   onInput = (event) => {
     const { text } = this.state;
-    let value = event.target.value;
+    let { target: { value } } = event;
     let date;
     const match = value.match(MONTH_DAY_YEAR_REGEXP);
     if (match) {
@@ -71,12 +71,9 @@ class DateInput extends Component {
         </Keyboard>
         {active ? (
           <Drop
-            control={this.ref}
+            target={this.ref}
             align={{ top: 'bottom', left: 'left' }}
-            onClose={() => {
-              console.log('!!! onClose');
-              this.setState({ active: false });
-            }}
+            onClose={() => this.setState({ active: false })}
           >
             <Box pad='small'>
               <Calendar size='small' date={date} onSelect={this.onSelect} />

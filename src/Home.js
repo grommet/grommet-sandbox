@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Heading, RoutedAnchor } from 'grommet';
 
 export default () => (
-  <Box margin='large' align='start' direction='row' wrap={true} gap='large'>
+  <Box pad='large' align='start' direction='row' wrap={true} gap='large'>
     <Box>
       <Heading level={2}>Layout</Heading>
       <RoutedAnchor path='/box' label='Box' />
@@ -35,10 +35,12 @@ export default () => (
       <RoutedAnchor path='/checkbox' label='CheckBox' />
       <RoutedAnchor path='/radiobutton' label='RadioButton' />
       <RoutedAnchor path='/rangeinput' label='RangeInput' />
+      <RoutedAnchor path='/rangeselector' label='RangeSelector' />
       <RoutedAnchor path='/select' label='Select' />
       <RoutedAnchor path='/textarea' label='TextArea' />
       <RoutedAnchor path='/textinput' label='TextInput' />
       <RoutedAnchor path='/select-creditcard' label='Select CreditCard' />
+      <RoutedAnchor path='/formfield' label='Form Field' />
     </Box>
 
     <Box>
@@ -54,9 +56,13 @@ export default () => (
 
     <Box>
       <Heading level={2}>Media</Heading>
-      <RoutedAnchor path='/carousel' label='Carousel' />
       <RoutedAnchor path='/image' label='Image' />
       <RoutedAnchor path='/video' label='Video' />
+    </Box>
+
+    <Box>
+      <Heading level={2}>Utilities</Heading>
+      <RoutedAnchor path='/infinitescroll' label='InfiniteScroll' />
     </Box>
 
     <Box>
@@ -67,7 +73,7 @@ export default () => (
 
     <Box>
       <Heading level={2}>Old School</Heading>
-      <RoutedAnchor path='/formfield' label='Form Field' />
+      <RoutedAnchor path='/carousel' label='Carousel' />
       <RoutedAnchor path='/table' label='Table' />
       <RoutedAnchor path='/table-fancy' label='Fancy Table' />
     </Box>

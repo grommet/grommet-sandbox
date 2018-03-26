@@ -1,14 +1,21 @@
 import React from 'react';
 import {
-  Table, TableBody, TableCell, TableFooter, TableHeader, TableRow, Text,
+  Table, TableBody, TableCell, TableFooter, TableHeader, TableRow,
+  Text,
 } from 'grommet';
 import SandboxComponent from './SandboxComponent';
 
 // Always should store amount in cents to avoid precision errors
 const DATA = [
-  { id: 1, name: 'Eric', email: 'eric@local', amount: 3775 },
-  { id: 2, name: 'Chris', email: 'chris@local', amount: 5825 },
-  { id: 3, name: 'Alan', email: 'alan@local', amount: 4300 },
+  {
+    id: 1, name: 'Eric', email: 'eric@local', amount: 3775,
+  },
+  {
+    id: 2, name: 'Chris', email: 'chris@local', amount: 5825,
+  },
+  {
+    id: 3, name: 'Alan', email: 'alan@local', amount: 4300,
+  },
 ];
 
 let TOTAL = 0;

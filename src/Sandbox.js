@@ -22,6 +22,7 @@ import FormField from './FormField';
 import Grid from './Grid';
 import Heading from './Heading';
 import Image from './Image';
+import InfiniteScroll from './InfiniteScroll';
 import Layer from './Layer';
 import Markdown from './Markdown';
 import Menu from './Menu';
@@ -29,6 +30,7 @@ import Meter from './Meter';
 import Paragraph from './Paragraph';
 import RadioButton from './RadioButton';
 import RangeInput from './RangeInput';
+import RangeSelector from './RangeSelector';
 import Select from './Select';
 import SelectCreditCard from './SelectCreditCard';
 import Stack from './Stack';
@@ -50,11 +52,12 @@ export default class Sandbox extends Component {
     const { history } = this.state;
     return (
       <Router history={history}>
-        <Grommet>
+        <Grommet full={true}>
           <Switch>
             <Route exact={true} path='/' component={Home} />
             <Route exact={true} path='/box' component={Box} />
             <Route exact={true} path='/grid' component={Grid} />
+            <Route exact={true} path='/infinitescroll' component={InfiniteScroll} />
             <Route exact={true} path='/layer' component={Layer} />
             <Route exact={true} path='/stack' component={Stack} />
 
@@ -84,6 +87,7 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/diagram' component={Diagram} />
             <Route exact={true} path='/distribution' component={Distribution} />
             <Route exact={true} path='/meter' component={Meter} />
+            <Route exact={true} path='/rangeselector' component={RangeSelector} />
             <Route exact={true} path='/worldmap' component={WorldMap} />
 
             <Route exact={true} path='/carousel' component={Carousel} />
