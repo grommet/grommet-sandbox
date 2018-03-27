@@ -3,7 +3,7 @@ import { CheckBox } from 'grommet';
 import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
-  state = {}
+  state = { checked: false }
 
   render() {
     const { checked } = this.state;
