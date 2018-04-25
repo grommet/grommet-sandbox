@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { Box, RoutedButton } from 'grommet';
+import { Box, Grid, RoutedButton } from 'grommet';
 import { Apps } from 'grommet-icons';
 
 const SandboxComponent = props => (
-  <Box>
+  <Grid>
     <Box align='start'>
       <RoutedButton icon={<Apps />} path='/' hoverIndicator={true} />
     </Box>
     <Box {...props} />
-  </Box>
+  </Grid>
 );
 
 SandboxComponent.defaultProps = {

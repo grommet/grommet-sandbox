@@ -3,7 +3,7 @@ import { Box, Grid } from 'grommet';
 import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <SandboxComponent align='stretch'>
+  <SandboxComponent align='stretch' pad={{ horizontal: 'large' }}>
     <Grid
       areas={[
         { name: 'nav', start: [0, 0], end: [0, 0] },

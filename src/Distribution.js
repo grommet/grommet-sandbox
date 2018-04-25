@@ -3,7 +3,7 @@ import { Box, Distribution, Text } from 'grommet';
 import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <SandboxComponent align='stretch'>
+  <SandboxComponent align='stretch' pad={{ horizontal: 'large' }}>
     <Distribution
       basis='medium'
       values={[

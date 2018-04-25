@@ -3,7 +3,7 @@ import { Video } from 'grommet';
 import SandboxComponent from './SandboxComponent';
 
 export default () => (
-  <SandboxComponent align='stretch'>
+  <SandboxComponent align='stretch' pad={{ horizontal: 'large' }}>
     <Video fit='cover' controls='over'>
       <source key='video' src='//v2.grommet.io/assets/small.mp4' type='video/mp4' />
       <track
