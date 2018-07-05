@@ -18,16 +18,16 @@
     "start-alias": "cross-env USE_ALIAS=true webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "grommet": "^2.0.0-beta.1",
-    "grommet-icons": "^0.16.0",
+    "grommet": "^2.0.0-beta.4",
+    "grommet-icons": "^1.0.0",
     "history": "^4.7.2",
-    "moment": "^2.21.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-formify": "^0.11.0",
-    "react-router-dom": "^4.2.2",
-    "styled-components": "^3.2.3",
+    "moment": "^2.20.1",
+    "prop-types": "^15.5.10",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-formify": "^0.1.0",
+    "react-router-dom": "^4.1.2",
+    "styled-components": "^3.3.0",
     "url-search-params": "^0.10.0"
   },
   "devDependencies": {
