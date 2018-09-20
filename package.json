@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "grommet": "^2.0.0-beta.4",
-    "grommet-icons": "^1.0.0",
+    "grommet-icons": "^3.0.0",
     "history": "^4.7.2",
     "moment": "^2.20.1",
     "prop-types": "^15.5.10",
