@@ -1,13 +1,12 @@
 const path = require('path');
-const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const useAlias = process.env.USE_ALIAS;
 
 const plugins = [
   new CopyWebpackPlugin([{ from: './public' }]),
-  new webpack.NamedModulesPlugin(),
-  new webpack.HotModuleReplacementPlugin(),
+  new CleanWebpackPlugin(['dist']),
 ];
 
 let alias;
@@ -25,7 +24,6 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     historyApiFallback: true,
-    hot: true,
     port: 8576,
   },
   entry: './src/index.js',
