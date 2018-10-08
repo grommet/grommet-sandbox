@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { Grommet } from 'grommet';
+import { grommet } from 'grommet/themes';
 import Home from './Home';
 import Anchor from './Anchor';
 import Box from './Box';
@@ -52,7 +53,7 @@ export default class Sandbox extends Component {
     const { history } = this.state;
     return (
       <Router history={history}>
-        <Grommet full={true}>
+        <Grommet theme={grommet} full={true}>
           <Switch>
             <Route exact={true} path='/' component={Home} />
             <Route exact={true} path='/box' component={Box} />
