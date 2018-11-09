@@ -4,14 +4,13 @@ import SandboxComponent from './SandboxComponent';
 
 export default () => (
   <SandboxComponent>
-    <Markdown>{`
-        # Out of Breath
+    <Markdown>{
+`# Out of Breath
 
-        You know, sometimes in life it seems like there's no way out. Like
-        a sheep trapped in a maze designed by wolves.
+You know, sometimes in life it seems like there's no way out. Like
+a sheep trapped in a maze designed by wolves.
 
-        [reference](#)
-      `}
+[reference](#)`}
     </Markdown>
   </SandboxComponent>
 );

@@ -4,21 +4,19 @@
   "main": "src/index.js",
   "description": "Sandbox of Grommet component examples.",
   "homepage": "http://v2.grommet.io",
-  "bugs": "https://github.com/grommet/grommet-examples/issues",
+  "bugs": "https://github.com/grommet/grommet-sandbox/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grommet/grommet-examples.git"
+    "url": "https://github.com/grommet/grommet-sandbox.git"
   },
   "license": "Apache-2.0",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
-    "build-alias": "cross-env USE_ALIAS=true NODE_ENV=production webpack --mode production",
     "lint": "eslint src",
-    "start": "webpack-dev-server --mode development --open",
-    "start-alias": "cross-env USE_ALIAS=true webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "grommet": "^2.0.0-rc",
+    "grommet": "^2.0.0",
     "grommet-icons": "^3.1.0",
     "history": "^4.7.2",
     "moment": "^2.20.1",
