@@ -8,12 +8,11 @@ export default class extends Component {
   state = { value: [], options: OPTIONS }
 
   render() {
-    const { options, selected, value } = this.state;
+    const { options, value } = this.state;
     return (
       <SandboxComponent>
         <Select
           multiple={true}
-          selected={selected}
           value={value}
           onSearch={(searchText) => {
             const regexp = new RegExp(searchText, 'i');
@@ -21,7 +20,6 @@ export default class extends Component {
           }}
           onChange={event => this.setState({
             value: event.value,
-            selected: event.selected,
             options: OPTIONS,
           })}
           options={options}
