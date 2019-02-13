@@ -23,12 +23,14 @@ export default () => (
 
       <Box>
         <Heading level={2}>Controls</Heading>
+        <RoutedAnchor path='/accordion' label='Accordion' />
         <RoutedAnchor path='/anchor' label='Anchor' />
         <RoutedAnchor path='/button' label='Button' />
         <RoutedAnchor path='/dropbutton' label='DropButton' />
         <RoutedAnchor path='/menu' label='Menu' />
         <RoutedAnchor path='/dropbutton-airlines' label='DropButton Airlines' />
         <RoutedAnchor path='/dropbutton-labels' label='DropButton Labels' />
+        <RoutedAnchor path='/tabs' label='Tabs' />
       </Box>
 
       <Box>
