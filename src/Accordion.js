@@ -4,13 +4,16 @@ import SandboxComponent from './SandboxComponent';
 
 export default () => (
   <SandboxComponent>
-    <Box width='100%'>
+    <Box fill='horizontal'>
       <Accordion animate='true' multiple='true' margin='small'>
         <AccordionPanel label='Panel 1'>
           <Box background='light-1'>Panel 1 content</Box>
         </AccordionPanel>
         <AccordionPanel label='Panel 2'>
-          <Box style={{ height: '200px' }} background='light-1'>Panel 2 content</Box>
+          <Box height='small' background='light-1'>Panel 2 content</Box>
+        </AccordionPanel>
+        <AccordionPanel label='Panel 3'>
+          <Box height='medium' background='light-1'>Panel 3 content</Box>
         </AccordionPanel>
       </Accordion>
     </Box>

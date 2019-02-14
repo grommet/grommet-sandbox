@@ -51,6 +51,7 @@ export default () => (
         <RoutedAnchor path='/calendar' label='Calendar' />
         <RoutedAnchor path='/chart' label='Chart' />
         <RoutedAnchor path='/clock' label='Clock' />
+        <RoutedAnchor path='/datatable' label='DataTable' />
         <RoutedAnchor path='/diagram' label='Diagram' />
         <RoutedAnchor path='/distribution' label='Distribution' />
         <RoutedAnchor path='/meter' label='Meter' />
