@@ -4,6 +4,7 @@ import { createBrowserHistory } from 'history';
 import { Grommet } from 'grommet';
 import { grommet } from 'grommet/themes';
 import Home from './Home';
+import Accordion from './Accordion';
 import Anchor from './Anchor';
 import Box from './Box';
 import Button from './Button';
@@ -13,6 +14,7 @@ import Chart from './Chart';
 import CheckBox from './CheckBox';
 import Clock from './Clock';
 import DateInput from './DateInput';
+import DataTable from './DataTable';
 import Diagram from './Diagram';
 import Distribution from './Distribution';
 import DropButton from './DropButton';
@@ -35,6 +37,7 @@ import RangeSelector from './RangeSelector';
 import Select from './Select';
 import SelectCreditCard from './SelectCreditCard';
 import Stack from './Stack';
+import Tabs from './Tabs';
 import Table from './Table';
 import TableFancy from './TableFancy';
 import Text from './Text';
@@ -67,12 +70,14 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/paragraph' component={Paragraph} />
             <Route exact={true} path='/text' component={Text} />
 
+            <Route exact={true} path='/accordion' component={Accordion} />
             <Route exact={true} path='/anchor' component={Anchor} />
             <Route exact={true} path='/button' component={Button} />
             <Route exact={true} path='/dropbutton' component={DropButton} />
             <Route exact={true} path='/dropbutton-airlines' component={DropButtonAirlines} />
             <Route exact={true} path='/dropbutton-labels' component={DropButtonLabels} />
             <Route exact={true} path='/menu' component={Menu} />
+            <Route exact={true} path='/tabs' component={Tabs} />
 
             <Route exact={true} path='/checkbox' component={CheckBox} />
             <Route exact={true} path='/rangeinput' component={RangeInput} />
@@ -85,6 +90,7 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/calendar' component={Calendar} />
             <Route exact={true} path='/chart' component={Chart} />
             <Route exact={true} path='/clock' component={Clock} />
+            <Route exact={true} path='/datatable' component={DataTable} />
             <Route exact={true} path='/diagram' component={Diagram} />
             <Route exact={true} path='/distribution' component={Distribution} />
             <Route exact={true} path='/meter' component={Meter} />
