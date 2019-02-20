@@ -3,10 +3,10 @@ import { MaskedInput } from 'grommet';
 import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
-  state = { text: '', phone: '' };
+  state = { time: '', phone: '' };
 
   render() {
-    const { text, phone } = this.state;
+    const { time, phone } = this.state;
     return (
       <SandboxComponent>
         <MaskedInput
@@ -45,8 +45,8 @@ export default class extends Component {
               placeholder: 'ap',
             },
           ]}
-          value={text}
-          onChange={event => this.setState({ text: event.target.value })}
+          value={time}
+          onChange={event => this.setState({ time: event.target.value })}
         />
         <br />
         <MaskedInput
