@@ -36,6 +36,7 @@ export default () => (
       <Box>
         <Heading level={2}>Input</Heading>
         <RoutedAnchor path='/checkbox' label='CheckBox' />
+        <RoutedAnchor path='/maskedinput' label='MaskedInput' />
         <RoutedAnchor path='/radiobutton' label='RadioButton' />
         <RoutedAnchor path='/rangeinput' label='RangeInput' />
         <RoutedAnchor path='/rangeselector' label='RangeSelector' />
