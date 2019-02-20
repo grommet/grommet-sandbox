@@ -28,6 +28,7 @@ import Image from './Image';
 import InfiniteScroll from './InfiniteScroll';
 import Layer from './Layer';
 import Markdown from './Markdown';
+import MaskedInput from './MaskedInput';
 import Menu from './Menu';
 import Meter from './Meter';
 import Paragraph from './Paragraph';
@@ -80,6 +81,7 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/tabs' component={Tabs} />
 
             <Route exact={true} path='/checkbox' component={CheckBox} />
+            <Route exact={true} path='/maskedinput' component={MaskedInput} />
             <Route exact={true} path='/rangeinput' component={RangeInput} />
             <Route exact={true} path='/radiobutton' component={RadioButton} />
             <Route exact={true} path='/select' component={Select} />
