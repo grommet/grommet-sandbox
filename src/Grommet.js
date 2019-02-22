@@ -5,7 +5,7 @@ import SandboxComponent from './SandboxComponent';
 export default () => (
   <SandboxComponent>
     <Grommet
-      full='true'
+      full={true}
       theme={{
         global: { colors: { custom: '#ff99cc', custom1: '#800080', custom2: '#D3D3D3' } },
             }}
