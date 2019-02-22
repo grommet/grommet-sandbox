@@ -23,12 +23,14 @@ export default () => (
 
       <Box>
         <Heading level={2}>Controls</Heading>
+        <RoutedAnchor path='/accordion' label='Accordion' />
         <RoutedAnchor path='/anchor' label='Anchor' />
         <RoutedAnchor path='/button' label='Button' />
         <RoutedAnchor path='/dropbutton' label='DropButton' />
         <RoutedAnchor path='/menu' label='Menu' />
         <RoutedAnchor path='/dropbutton-airlines' label='DropButton Airlines' />
         <RoutedAnchor path='/dropbutton-labels' label='DropButton Labels' />
+        <RoutedAnchor path='/tabs' label='Tabs' />
       </Box>
 
       <Box>
@@ -50,6 +52,7 @@ export default () => (
         <RoutedAnchor path='/calendar' label='Calendar' />
         <RoutedAnchor path='/chart' label='Chart' />
         <RoutedAnchor path='/clock' label='Clock' />
+        <RoutedAnchor path='/datatable' label='DataTable' />
         <RoutedAnchor path='/diagram' label='Diagram' />
         <RoutedAnchor path='/distribution' label='Distribution' />
         <RoutedAnchor path='/meter' label='Meter' />
