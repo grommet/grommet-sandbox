@@ -117,7 +117,6 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/grommet' component={GrommetComponent} />
             <Route exact={true} path='/themecontext' component={ThemeContext} />
 
-
           </Switch>
         </Grommet>
       </Router>
