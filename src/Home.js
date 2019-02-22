@@ -67,7 +67,10 @@ export default () => (
 
       <Box>
         <Heading level={2}>Utilities</Heading>
+        <RoutedAnchor path='/grommet' label='Grommet' />
         <RoutedAnchor path='/infinitescroll' label='InfiniteScroll' />
+        <RoutedAnchor path='/responsivecontext' label='ResponsiveContext' />
+        <RoutedAnchor path='/themecontext' label='ThemeContext' />
       </Box>
 
       <Box>
