@@ -4,7 +4,7 @@ import { Close } from 'grommet-icons';
 import SandboxComponent from './SandboxComponent';
 
 export default class extends Component {
-  state = {}
+  state = { open: false };
 
   render() {
     const { open } = this.state;
@@ -13,14 +13,15 @@ export default class extends Component {
         <DropButton
           label='Choose'
           open={open}
-          onClose={() => this.setState({ open: undefined })}
+          onClose={() => this.setState({ open: false })}
+          onOpen={() => this.setState({ open: true })}
           dropContent={(
             <Box pad='small'>
               <Box direction='row' justify='between' align='center'>
                 <Heading level={3} margin='small' >Heading</Heading>
                 <Button
                   icon={<Close />}
-                  onClick={() => this.setState({ open: undefined })}
+                  onClick={() => this.setState({ open: false })}
                 />
               </Box>
               <Text>Content</Text>
