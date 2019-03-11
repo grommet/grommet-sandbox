@@ -5,26 +5,10 @@ import {
   CheckBox,
   Form,
   FormField,
-  RadioButton,
-  Select,
+  RadioButtonGroup,
+  Select
 } from "grommet";
 import SandboxComponent from "./SandboxComponent";
-
-const RadioButtonGroup = ({ name, onChange, options, value }) => (
-  <Box gap="small">
-    {options.map(option => (
-      <Box key={option}>
-        <RadioButton
-          name={name}
-          value={option}
-          label={option}
-          checked={value === option}
-          onChange={() => onChange({ value: option })}
-        />
-      </Box>
-    ))}
-  </Box>
-);
 
 export default () => (
   <SandboxComponent pad="none">
