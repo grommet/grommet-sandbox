@@ -1,12 +1,11 @@
 import React from "react";
 import {
-  Box,
   Button,
   CheckBox,
   Form,
   FormField,
   RadioButtonGroup,
-  Select
+  Select,
 } from "grommet";
 import SandboxComponent from "./SandboxComponent";
 

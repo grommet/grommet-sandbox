@@ -30,6 +30,7 @@ export default () => (
         <RoutedAnchor path='/menu' label='Menu' />
         <RoutedAnchor path='/dropbutton-airlines' label='DropButton Airlines' />
         <RoutedAnchor path='/dropbutton-labels' label='DropButton Labels' />
+        <RoutedAnchor path='/skiplinks' label='Skip Links' />
         <RoutedAnchor path='/tabs' label='Tabs' />
       </Box>
 
@@ -67,6 +68,7 @@ export default () => (
 
       <Box>
         <Heading level={2}>Utilities</Heading>
+        <RoutedAnchor path='/announcecontext' label='AnnounceContext' />
         <RoutedAnchor path='/grommet' label='Grommet' />
         <RoutedAnchor path='/infinitescroll' label='InfiniteScroll' />
         <RoutedAnchor path='/responsivecontext' label='ResponsiveContext' />
