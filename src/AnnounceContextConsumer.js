@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AnnounceContext, Box, Text, Grommet } from 'grommet';
+import { AnnounceContext, Box, Grommet, Heading, Text } from 'grommet';
 import { grommet } from 'grommet/themes';
 import SandboxComponent from './SandboxComponent';
 
@@ -37,19 +37,19 @@ export default class extends Component {
     return (
       <SandboxComponent>
         <Grommet theme={grommet}>
-          <Box
-            justify="center"
-            align="center"
-            pad="xlarge"
-            background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)"
-            round="large"
-            fill
-          >
-            <Text color="white">Welcome to announcement section</Text>
+        <Box
+          justify="center"
+          align="center"
+          pad="xlarge"
+          background="brand"
+          round="large"
+          fill={true}
+        >
+            <Heading color="white">Welcome to announcement section</Heading>
             <AnnounceContext.Consumer>
               {announce => <Announcer announce={announce} />}
             </AnnounceContext.Consumer>
-          </Box>
+        </Box>
         </Grommet>
       </SandboxComponent>
     )
