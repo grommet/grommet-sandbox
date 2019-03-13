@@ -40,7 +40,7 @@ import RangeSelector from './RangeSelector';
 import ResponsiveContext from './ResponsiveContextConsumer';
 import Select from './Select';
 import SelectCreditCard from './SelectCreditCard';
-import SkipLinks from './SkipLinks'
+import SkipLink from './SkipLink'
 import Stack from './Stack';
 import Tabs from './Tabs';
 import Table from './Table';
@@ -78,7 +78,7 @@ export default class Sandbox extends Component {
 
             <Route exact={true} path='/accordion' component={Accordion} />
             <Route exact={true} path='/anchor' component={Anchor} />
-            <Route exact={true} path='/skiplinks' component={SkipLinks} />
+            <Route exact={true} path='/skiplink' component={SkipLink} />
             <Route exact={true} path='/button' component={Button} />
             <Route exact={true} path='/dropbutton' component={DropButton} />
             <Route exact={true} path='/dropbutton-airlines' component={DropButtonAirlines} />

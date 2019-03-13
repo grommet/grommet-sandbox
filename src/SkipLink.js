@@ -26,8 +26,8 @@ export default class extends Component {
     const { href } = this.state;
     return (
       <SandboxComponent>
-        <Anchor margin="medium" target="_tab" href={`${href}/skiplinks`}>
-          Open this in new tab to experience skiplinks
+        <Anchor margin="medium" target="_tab" href={`${href}/skiplink`}>
+          Open this in new tab to experience skiplink
         </Anchor>
         <SkipLink id="C5" target="_self" label="Skip to chapter-5" />
         {courses.map((course, index) => (
