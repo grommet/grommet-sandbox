@@ -1,6 +1,6 @@
 # grommet-sandbox
 
-Basic playground for each grommet component
+Basic playground for each grommet v2 component
 
 To run this application, execute the following commands:
 
