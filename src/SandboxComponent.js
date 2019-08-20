@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Box, Grid, RoutedButton } from 'grommet';
+import { Box, Grid } from 'grommet';
 import { Apps } from 'grommet-icons';
+import RoutedButton from './RoutedButton'
 
 const SandboxComponent = props => (
   <Grid>
