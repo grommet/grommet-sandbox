@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Box, Grid, Heading, RoutedAnchor } from 'grommet';
-// import RoutedAnchor from './RoutedAnchor';
+import { Box, Grid, Heading } from 'grommet';
+import RoutedAnchor from './RoutedAnchor';
 
 export default () => (
   <Box pad='large'>
