@@ -1,6 +1,6 @@
-# grommet-site
+# grommet-sandbox
 
-Initial work on grommet v2 site.
+Basic playground for each grommet component
 
 To run this application, execute the following commands:
 
