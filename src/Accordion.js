@@ -5,7 +5,7 @@ import SandboxComponent from './SandboxComponent';
 export default () => (
   <SandboxComponent>
     <Box fill='horizontal'>
-      <Accordion animate='true' multiple='true' margin='small'>
+      <Accordion animate={true} multiple={true} margin='small'>
         <AccordionPanel label='Panel 1'>
           <Box background='light-1'>Panel 1 content</Box>
         </AccordionPanel>
