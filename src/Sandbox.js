@@ -6,6 +6,7 @@ import { grommet } from 'grommet/themes';
 import Home from './Home';
 import Accordion from './Accordion';
 import Anchor from './Anchor';
+import AnnounceContext from './AnnounceContextConsumer';
 import Box from './Box';
 import Button from './Button';
 import Calendar from './Calendar';
@@ -39,6 +40,7 @@ import RangeSelector from './RangeSelector';
 import ResponsiveContext from './ResponsiveContextConsumer';
 import Select from './Select';
 import SelectCreditCard from './SelectCreditCard';
+import SkipLink from './SkipLink'
 import Stack from './Stack';
 import Tabs from './Tabs';
 import Table from './Table';
@@ -76,6 +78,7 @@ export default class Sandbox extends Component {
 
             <Route exact={true} path='/accordion' component={Accordion} />
             <Route exact={true} path='/anchor' component={Anchor} />
+            <Route exact={true} path='/skiplink' component={SkipLink} />
             <Route exact={true} path='/button' component={Button} />
             <Route exact={true} path='/dropbutton' component={DropButton} />
             <Route exact={true} path='/dropbutton-airlines' component={DropButtonAirlines} />
@@ -112,6 +115,7 @@ export default class Sandbox extends Component {
 
             <Route exact={true} path='/table' component={Table} />
             <Route exact={true} path='/table-fancy' component={TableFancy} />
+            <Route exact={true} path='/announcecontext' component={AnnounceContext} />
             <Route exact={true} path='/responsivecontext' component={ResponsiveContext} />
             <Route exact={true} path='/maskedinput' component={MaskedInput} />
             <Route exact={true} path='/grommet' component={GrommetComponent} />
