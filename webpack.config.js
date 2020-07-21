@@ -13,7 +13,6 @@ module.exports = {
     contentBase: './dist',
     historyApiFallback: true,
     port: 8576,
-    disableHostCheck: true,
   },
   entry: './src/index.js',
   output: {
