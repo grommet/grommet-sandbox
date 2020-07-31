@@ -16,7 +16,7 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "grommet": "^2.4.0",
+    "grommet": "^https://github.com/grommet/grommet/tarball/stable",
     "grommet-icons": "^4.0.0",
     "history": "^4.7.2",
     "moment": "^2.20.1",
