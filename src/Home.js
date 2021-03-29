@@ -58,6 +58,7 @@ export default () => (
         <RoutedAnchor path='/diagram' label='Diagram' />
         <RoutedAnchor path='/distribution' label='Distribution' />
         <RoutedAnchor path='/meter' label='Meter' />
+        <RoutedAnchor path='/spinner' label='Spinner' />
         <RoutedAnchor path='/worldmap' label='WorldMap' />
       </Box>
 
