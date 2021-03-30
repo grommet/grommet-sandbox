@@ -41,6 +41,7 @@ import ResponsiveContext from './ResponsiveContextConsumer';
 import Select from './Select';
 import SelectCreditCard from './SelectCreditCard';
 import SkipLink from './SkipLink'
+import Spinner from './Spinner'
 import Stack from './Stack';
 import Tabs from './Tabs';
 import Table from './Table';
@@ -103,6 +104,7 @@ export default class Sandbox extends Component {
             <Route exact={true} path='/distribution' component={Distribution} />
             <Route exact={true} path='/meter' component={Meter} />
             <Route exact={true} path='/rangeselector' component={RangeSelector} />
+            <Route exact={true} path='/spinner' component={Spinner} />
             <Route exact={true} path='/worldmap' component={WorldMap} />
 
             <Route exact={true} path='/carousel' component={Carousel} />
