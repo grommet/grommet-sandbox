@@ -19,7 +19,7 @@
     "grommet": "https://github.com/grommet/grommet/tarball/stable",
     "grommet-icons": "^4.0.0",
     "history": "^4.7.2",
-    "moment": "^2.20.1",
+    "moment": "^2.29.2",
     "prop-types": "^15.5.10",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
